@@ -5,15 +5,14 @@
 
 input[type=text] {
     background: white;
-    background-image: url(https://www.flaticon.com/svg/vstatic/svg/126/126474.svg?token=exp=1611460114~hmac=a455fef4d2de04563cb41f0985d637ad);
-    background-position: 3px;
-    background-size: 15px;
-    background-repeat: no-repeat;
+    /* background-image: url(search.svg);
+    background-size: 20px;
+    background-repeat: no-repeat; */
     width: 500px;
     height: 40px;
     box-sizing: border-box;
     border: solid .5px lightgray;
-    border-radius: 8px;
+    border-radius: 20px;
 } 
 
 
