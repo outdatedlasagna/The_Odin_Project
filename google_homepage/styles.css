@@ -12,10 +12,9 @@ input[type=text] {
     width: 500px;
     height: 40px;
     box-sizing: border-box;
-    border: solid 2px grey;
+    border: solid .5px lightgray;
     border-radius: 8px;
 } 
-
 
 
 img {
@@ -36,7 +35,7 @@ button {
 }
 
 button:hover {
-    border: solid;
+    border: solid .75px;
     border-color: lightgray;
     border-radius: 5px;
 }
