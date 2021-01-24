@@ -1,0 +1,72 @@
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type=text] {
+    background: white;
+    background-image: url(https://www.flaticon.com/svg/vstatic/svg/126/126474.svg?token=exp=1611460114~hmac=a455fef4d2de04563cb41f0985d637ad);
+    background-position: 3px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    border: solid 2px grey;
+    border-radius: 8px;
+} 
+
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 90px;
+}
+
+button {
+    border: none;
+    padding: 5px;
+    margin: 9px;
+    background-color: white;
+    font-size: 15px;
+    color: rgb(101, 101, 101);
+}
+
+button:hover {
+    border: solid;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.main-footer {
+color: rgb(99, 99, 99);
+text-align: left;
+}
+
+
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.second-bottom-footer {
+    display: flex;
+    justify-content: center; 
+}
+
+a {
+    text-decoration: none;
+    color: rgb(99, 99, 99); 
+    padding: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
