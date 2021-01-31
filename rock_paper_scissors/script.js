@@ -55,6 +55,10 @@ else if (computerSelection === "paper" && playerSelection === "rock") {
     return alert("You lose! Paper beats rock");
      }
 
+else {
+    console.log();
+     }
+
 return(playRound(playerSelection, computerSelection));
 
 }
@@ -79,6 +83,10 @@ function game() {
 
     else if (player_score > computer_score) {
         return alert("You are the winner");
+    }
+
+    else {
+        console.log();
     }
 
 }
