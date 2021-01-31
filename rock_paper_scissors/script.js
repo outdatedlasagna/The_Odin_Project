@@ -1,3 +1,8 @@
+let computer_score = 0;
+let player_score = 0;
+
+let computer_points;
+let player_points;
 
 
 function computerPlay() {      
@@ -8,52 +13,72 @@ console.log(objects);
 }
 
 
-
-
 function playRound(playerSelection, computerSelection) {
 computerSelection = computerPlay();
 playerSelection = prompt("Rock! Paper! Scissors!").toLowerCase();
 
 
 if(playerSelection === computerSelection) {
+    player_points = ++player_score;
+    computer_points = ++computer_points;
     return alert("It's a tie!");
     }
 
 else if (playerSelection === "scissors" && computerSelection === "paper") {
-    return alert("You win!");
+    player_points = ++player_score;
+    return alert("You win! Scissors beats paper!");
 }
 
 
 else if (playerSelection === "paper" && computerSelection === "rock") {
-    return alert("You win!");
+    player_points = ++player_score;
+    return alert("You win! Paper beats rock!");
     }
 
 else if (playerSelection === "rock" && computerSelection === "scissors") {
-    return alert("You win!");
+    player_points = ++player_score;
+    return alert("You win! Rock beats scissors");
     }
 
 else if (computerSelection === "rock" && playerSelection === "scissors") {
-    return alert("You lose!");
+    computer_points = ++computer_points;
+    return alert("You lose! Rock beats scissors");
     }
     
 else if (computerSelection === "scissors" && playerSelection === "paper") {
-    return alert("You lose!");
+    computer_points = ++computer_points;
+    return alert("You lose! Scissors beat paper");
     }
     
 else if (computerSelection === "paper" && playerSelection === "rock") {
-    return alert("You lose!");
+    computer_points = ++computer_points;
+    return alert("You lose! Paper beats rock");
      }
+
+return(playRound(playerSelection, computerSelection));
+
 }
 
 
+function game() {
+
+    playRound();
+    playRound();
+    playRound();
+    playRound();
+    playRound();
 
 
+    if (computer_score == player_score) {
+        return alert("The game is a tie");
+    }
 
+    else if (player_score < computer_score) {
+        return alert("You've been beaten by a computer");
+    }
 
+    else if (player_score > computer_score) {
+        return alert("You are the winner");
+    }
 
-
-// function game() {
-
-//     // Use the previous function inside of this one to play a 5 round game
-//     // that keeps score and reports a winner or loser at the end
-// }
+}
